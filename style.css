@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    background: #e8aae3;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header h1 {
+    font-size: 60px;
+    font-family: 'Yesteryear', cursive;
+    font-weight: normal;
+    color: white;
+
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*border: 1px solid red;*/
+
+}
+
+.box-img {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+   /* border: 1px solid blue;*/
+}
+
+.box-text {
+    display: flex;
+    flex-flow: row wrap;
+    width: 35%;
+   /* border: 1px solid green;*/
+}
+
+.box-text span{
+    color: gray;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.box-text h2{
+    font-family: "DM Sans", sans-serif;
+    font-size: 70px;
+    color: #ce4ec4;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 70px;
+}
+
+.box-text p{
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.btn-hero{
+    background: #ce4ec4;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: 'DM Sans' sans-serif;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-bottom: 30px;
+}
+
+.btn-hero:hover{
+    background: #da2387;
+    font-size: 18px;
+}
+
+.box-item{
+    width: 30%;
+    height: 380px;
+    background: #f6d9f4;
+    margin: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.m-top{
+    margin-top: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background: #e8aae3;
+    height: 150px;
+    color: white;
+    font-size: 222p;
+}
+
+.whats{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+@media screen and (max-width:1200px){
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    header h1{
+        font-size: 45px;
+    }
+
+    .box-text{
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px;
+    }
+
+
+    .box-text h2{
+        font-size: 45px;
+    }
+
+    .box-text p{
+        text-align: center;
+    }
+
+    .box-img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .responsiva{
+        max-width: 100%;
+    }
+
+    .box-item{
+        width: 95%;
+    }
+
+    footer{
+        font-size: 18px;
+        text-align: center;
+    }
+}

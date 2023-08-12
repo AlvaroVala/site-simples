@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Clínica Da Mulher</h1>
+    </header>
+
+    <section class="hero">
+        <div class="box-img">
+            <img src= "img/doutora3.webp" class="responsiva" id="doutora" alt="">
+        </div>
+        <div class="box-text">
+            <span>MARQUE SUA CONSULTA</span>
+            <h2>Saúde plena,<br>Vida serena!</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quo eveniet sed nesciunt consequuntur
+                dolore molestias vitae suscipit minima voluptas totam, nulla dignissimos nemo architecto sunt,
+                reprehenderit,
+                nobis ullam? Culpa.</p>
+            <a target="_blank" href="https://wa.link/kvh5wt" class="btn-hero">Marcar Consulta</a>
+        </div>
+    </section>
+
+    <section class="especialidades">
+        <div class="box-item">
+            <h3>Especialidade 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque, a, repellat cumque et delectus esse
+                velit animi saepe adipisci sequi, possimus repellendus. Sapiente distinctio doloremque provident
+                eligendi expedita aspernatur!</p>
+        </div>
+        <div class="box-item">
+            <h3>Especialidade 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque, a, repellat cumque et delectus esse
+                velit animi saepe adipisci sequi, possimus repellendus. Sapiente distinctio doloremque provident
+                eligendi expedita aspernatur!</p>
+        </div>
+        <div class="box-item">
+            <h3>Especialidade 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque, a, repellat cumque et delectus esse
+                velit animi saepe adipisci sequi, possimus repellendus. Sapiente distinctio doloremque provident
+                eligendi expedita aspernatur!</p>
+        </div>
+        <a target="_blank" href="https://wa.link/kvh5wt" class="m-top btn-hero">Marcar Consulta</a>
+    </section>
+
+    <footer>
+        <p>2023 © Clínica da Mulher. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="whats">
+        <a target="_blank" href="https://wa.link/kvh5wt">
+            <img width="50px" src="img/whats.png" alt="">
+        </a>
+    </div>
+
+    <script>
+        const doutora = document.getElementById('doutora')
+
+        doutora.addEventListener('mouseover', function () {
+            doutora.src = "img/doutora2.webp"
+        })
+
+        doutora.addEventListener('mouseout', function () {
+            doutora.src = "img/doutora3.webp"
+        })
+    </script>
+</body>
+
+</html>
